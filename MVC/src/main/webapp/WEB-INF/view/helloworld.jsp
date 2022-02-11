@@ -9,6 +9,9 @@
   <br>
 
   Student Name: ${param.studentName}
+  <br><br>
+  Student Name UPPERCASE: ${message}
+
 
 </body>
 </html>

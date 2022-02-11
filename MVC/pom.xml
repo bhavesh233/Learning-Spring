@@ -54,7 +54,6 @@
       <artifactId>[the artifact id of the block to be mounted]</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency-->
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
     <dependency>
       <groupId>org.springframework</groupId>
