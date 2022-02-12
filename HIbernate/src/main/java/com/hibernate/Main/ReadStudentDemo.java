@@ -8,8 +8,8 @@ import org.hibernate.cfg.Configuration;
 public class ReadStudentDemo {
 
     public static void main(String[] args) {
-        // create a session Factory
 
+        // create a session Factory
         SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
 
         // create Session
@@ -18,7 +18,7 @@ public class ReadStudentDemo {
         try {
             // create student object
             System.out.println("Creating new Object......");
-            Student newStudent = new Student("Smit", "Wall", "Paul123@gmail.com");
+            Student newStudent = new Student("Meet", "Wall", "Paul123@gmail.com");
 
             // start the transaction
             session.beginTransaction();
@@ -26,6 +26,7 @@ public class ReadStudentDemo {
             // save the student object
 
             System.out.println(newStudent);
+            System.out.println(newStudent.getId());
 
             session.save(newStudent);
             System.out.println("Saving the student......");
