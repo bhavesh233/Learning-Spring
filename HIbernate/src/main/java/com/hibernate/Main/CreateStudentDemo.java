@@ -8,11 +8,9 @@ import org.hibernate.cfg.Configuration;
 
 public class CreateStudentDemo {
 
-
     public static void main(String[] args) {
 
         // create a session Factory
-
         SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
 
         // create Session
@@ -39,7 +37,5 @@ public class CreateStudentDemo {
         } finally {
             sessionFactory.close();
         }
-
-
     }
 }

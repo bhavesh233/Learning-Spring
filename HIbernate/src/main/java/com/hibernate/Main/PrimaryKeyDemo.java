@@ -24,6 +24,11 @@ public class PrimaryKeyDemo {
             // start the transaction
             session.beginTransaction();
 
+            System.out.println(newStudent1);
+            System.out.println(newStudent2);
+            System.out.println(newStudent3);
+
+
             // save the student object
             session.save(newStudent1);
             session.save(newStudent2);
