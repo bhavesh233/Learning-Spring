@@ -8,18 +8,17 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class StudentRestExecptionHandler {
 
-    @ExceptionHandler
-    public ResponseEntity<StudentErrorResponseData> handleException(StudentNotFoundException exc){
-
-        StudentErrorResponseData error = new StudentErrorResponseData();
-
-        error.setStatus(HttpStatus.NOT_FOUND.value());
-        error.setMessage(exc.getMessage());
-        error.setTimeStamp(System.currentTimeMillis());
-
-        return  new ResponseEntity<StudentErrorResponseData>(error,HttpStatus.NOT_FOUND);
-
-    }
+//    @ExceptionHandler
+//    public ResponseEntity<StudentErrorResponseData> handleException(StudentNotFoundException exc){
+//
+//        StudentErrorResponseData error = new StudentErrorResponseData();
+//
+//        error.setStatus(HttpStatus.NOT_FOUND.value());
+//        error.setMessage(exc.getMessage());
+//        error.setTimeStamp(System.currentTimeMillis());
+//        return  new ResponseEntity<StudentErrorResponseData>(error,HttpStatus.NOT_FOUND);
+//
+//    }
 
 
     @ExceptionHandler
