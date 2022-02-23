@@ -12,7 +12,7 @@ public class Infiny {
         }catch (Exception e){
             e.printStackTrace();
         }
-        
+
 
 
         for(int i=0;i<50000;i++){
